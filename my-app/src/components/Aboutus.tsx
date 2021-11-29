@@ -49,7 +49,7 @@ const Aboutus = () => {
         </div>
       </div>
       <div id="home" className="accordions" onClick={() => homefun()}>
-        Home
+        History
       </div>
       {home && (
         <p className="paccordions">

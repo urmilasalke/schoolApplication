@@ -1,21 +1,43 @@
 const router = require('express').Router();
 import {Request,Response} from 'express'
 const admission=require("../model/Admission")
+// router.post('/',(req:Request, res:Response)=>{
+//   console.log('inside admission')
+//       var newadmission = new admission({
+//       category:req.body.category,
+//       grade:req.body.grade,
+//       fees:req.body.fees,
+//       seats:req.body.seats
+//       });   
+//   newadmission.save()
+//   .then(() => res.json("data saved"))
+//   .catch(() =>
+//     res.json("err")
+//   );
+//   console.log('created')
+// })
+
 router.post('/',(req:Request, res:Response)=>{
-    console.log('inside admission')
-    console.log("data"+req.body.grade)
-        var newadmission = new admission({
-        category:req.body.category,
-        grade:req.body.grade,
-        fees:req.body.fees,
-        seats:req.body.seats
-        });   
+
+  console.log('inside admission')
+
+  const admissionData=[]
+
+  for(const option of req.body.options){
+    const opt={
+      grade: option.grade,
+      fees: option.fees,
+      seats:option.seats,
+  }
+  var newadmission = new admission({
+    category:req.body.category,
+    options: [opt]
+    }); 
     newadmission.save()
-    .then(() => res.json("data saved"))
-    .catch(() =>
-      res.json("err")
-    );
-    console.log('created')
+    admissionData.push(newadmission)
+  }
+  res.json("data saved");
+  console.log('created')
 })
 
 router.get('/:category',(req:Request, res:Response)=>{

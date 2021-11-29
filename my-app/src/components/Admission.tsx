@@ -27,7 +27,8 @@ const Admission = () => {
   return (
     <>
       <section className="school"></section>
-      <h5>Grades Available!</h5>
+
+      <h5 className="h5">Grades Available!</h5>
       <ul>
         <Link to="/preprimary">
           <li>Pre-primary</li>
@@ -40,7 +41,7 @@ const Admission = () => {
           <li>Secondary</li>
         </Link>
       </ul>
-      <Table striped bordered hover size="sm">
+      {/* <Table striped bordered hover size="sm">
         <thead>
           <tr>
             <th>Grade</th>
@@ -51,7 +52,6 @@ const Admission = () => {
         <tbody>
           {grades.map((grade) => (
             <>
-              {/* <p>{grade.category}</p> */}
               {grade.options.map((option) => (
                 <>
                   <tr>
@@ -64,7 +64,7 @@ const Admission = () => {
             </>
           ))}
         </tbody>
-      </Table>
+      </Table> */}
     </>
   );
 };

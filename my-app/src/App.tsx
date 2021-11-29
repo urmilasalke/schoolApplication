@@ -13,7 +13,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 function App() {
   return (
     <Router>
-      {/* <TopHeader /> */}
+      <TopHeader />
       <Header />
       <div className="page">
         <Routes>
