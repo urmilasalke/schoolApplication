@@ -5,3 +5,8 @@
   background-repeat: no-repeat;
   height: 300px;
 }
+
+h2 {
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}

@@ -10,3 +10,13 @@
   padding: 20px;
   /* text-align: center; */
 }
+
+.item {
+  text-decoration: none;
+  margin: 7px 7px 7px;
+  color: black;
+}
+/* 
+.link {
+  text-decoration: none;
+} */

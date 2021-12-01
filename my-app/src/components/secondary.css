@@ -1,0 +1,11 @@
+.secondaryimg {
+  background: url(../images/img3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.container {
+  margin-bottom: 30px;
+}

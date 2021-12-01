@@ -1,0 +1,44 @@
+/* .contact {
+  background: url(../images/school2.jpg);
+  background-size: 100% 100%;
+} */
+
+.head {
+  background-color: blue;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: -40px;
+  box-shadow: 10px 12px 26px 5px rgba(219, 159, 219, 0.46);
+  -webkit-box-shadow: 10px 12px 26px 5px rgba(219, 159, 219, 0.46);
+  -moz-box-shadow: 10px 12px 26px 5px rgba(219, 159, 219, 0.46);
+}
+
+.effect-1 {
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* .effect-1 ~ .Focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(230, 47, 230);
+  transition: 0.4s;
+}
+
+.effect-1:focus ~ .Focus-border {
+  width: 100%;
+  transition: 00.4s;
+  left: 0;
+} */
+.btn1 {
+  background: blue;
+  color: white;
+  outline: none;
+}

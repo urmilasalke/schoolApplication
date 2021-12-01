@@ -1,0 +1,11 @@
+.primaryimg {
+  background: url(../images/p.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.container {
+  margin-bottom: 30px;
+}

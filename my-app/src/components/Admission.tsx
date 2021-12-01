@@ -1,11 +1,12 @@
 import React from "react";
-import Table from "react-bootstrap/Table";
+// import Table from "react-bootstrap/Table";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { MainState } from "./store/AdmissionStore";
 import { useSelector, useDispatch } from "react-redux";
 import { setAdmissionGrades } from "./reducers/AdmissionReducer";
 import { Link } from "react-router-dom";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 import "./admission.css";
 const Admission = () => {
   const grades = useSelector((state: MainState) => state.admission.value);
@@ -26,8 +27,17 @@ const Admission = () => {
   // axios.get(`http://localhost:5000/${category}`).then(()=>{}).catch(()=>{})
   return (
     <>
-      <section className="school"></section>
-
+      <div>
+        <section className="school"></section>
+        <Breadcrumb className="breadcrumb">
+          <Breadcrumb.Item href="/" className="item">
+            Home
+          </Breadcrumb.Item>
+          <Breadcrumb.Item active className="item">
+            Admission
+          </Breadcrumb.Item>
+        </Breadcrumb>
+      </div>
       <h5 className="h5">Grades Available!</h5>
       <ul>
         <Link to="/preprimary">

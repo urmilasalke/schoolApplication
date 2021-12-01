@@ -1,15 +1,15 @@
 .topheader {
-  background-color: #9bbf47;
+  background-color: tomato;
   width: 100%;
   padding-left: 30px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  height: 40px;
+  padding: 5px;
+  height: auto;
 }
 
-.fontawsome-mail {
-  /* padding-left: 0px; */
+/* .fontawsome-mail {
   margin-left: 40px;
   margin-top: 10px;
   margin-right: 15px;
@@ -18,4 +18,4 @@
 .fontawsome-phone {
   margin-left: 30px;
   margin-top: 10px;
-}
+}  */

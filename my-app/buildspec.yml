@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      #npm install
+  pre_build:
+    commands:
+      #install dependencies
+  build:
+    commands:
+      #test
+      #build
+artifacts:
+  files: -"**/*"
+  discard-paths: no
+  base-directory:

@@ -28,12 +28,12 @@ mongoose
   })
   .then(() => {
     console.log("Connected to db");
-
-    app.listen(process.env.PORT, () => {
-      console.log("Server is running");
-    });
   }).catch(()=>{
       console.log("error")
   })
 
 app.use("/",require("./routes/Admission"))
+
+app.listen(process.env.PORT, () => {
+  console.log("Server is running");
+});

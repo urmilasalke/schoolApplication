@@ -20,8 +20,12 @@ const Aboutus = () => {
       <div>
         <section className="aboutschool"></section>
         <Breadcrumb className="breadcrumb">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item active>About Us</Breadcrumb.Item>
+          <Breadcrumb.Item href="/" className="item">
+            Home
+          </Breadcrumb.Item>
+          <Breadcrumb.Item active className="item">
+            About Us
+          </Breadcrumb.Item>
         </Breadcrumb>
       </div>
       <div className="containers">
@@ -48,6 +52,7 @@ const Aboutus = () => {
           </div>
         </div>
       </div>
+      <br></br>
       <div id="home" className="accordions" onClick={() => homefun()}>
         History
       </div>
@@ -72,6 +77,7 @@ const Aboutus = () => {
           your child. The School located Hinjawadi Pune.
         </p>
       )}
+      <br></br>
     </>
   );
 };

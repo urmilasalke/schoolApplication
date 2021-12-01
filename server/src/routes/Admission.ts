@@ -19,7 +19,7 @@ const admission=require("../model/Admission")
 
 router.post('/',(req:Request, res:Response)=>{
 
-  console.log('inside admission')
+  console.log('inside admission post')
 
   const admissionData=[]
 
