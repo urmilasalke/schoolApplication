@@ -5,11 +5,13 @@ phases:
       #install node version 16
       - curl -fsSL https://deb.nodesource.com/setup_16.x | -E bash -
       - apt-get install -y nodejs
+      - npm install
 
   pre_build:
     commands:
       #install dependencies
-      - npm i
+      # - npm i
+      cd my-app
 
   build:
     commands:
@@ -21,4 +23,3 @@ phases:
 artifacts:
   files: -"**/*"
   discard-paths: no
-  base-directory: MY-APP
