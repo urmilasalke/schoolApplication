@@ -18,7 +18,7 @@ phases:
       #test
       - npm test
       #build
-      - npm build
+      - npm run build
 
 artifacts:
   files: -"**/*"
