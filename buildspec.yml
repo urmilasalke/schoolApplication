@@ -18,8 +18,9 @@ phases:
       #test
       - npm test
       #build
-      - npm run build
+      # - npm run build
 
 artifacts:
   files: -"**/*"
   discard-paths: no
+  base-directory: build
