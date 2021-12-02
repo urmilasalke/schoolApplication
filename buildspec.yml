@@ -15,7 +15,7 @@ phases:
   build:
     commands:
       #test
-      - npm test
+      # - npm test
       #build
       - npm run build
 
