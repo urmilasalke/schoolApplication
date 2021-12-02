@@ -13,3 +13,10 @@
 .container {
   margin-bottom: 30px;
 }
+
+.item {
+  text-decoration: none;
+  margin: 7px 0 7px;
+  padding: 7px;
+  color: black;
+}

@@ -6,7 +6,7 @@ import { setAdmissionGrades } from "./reducers/AdmissionReducer";
 import axios from "axios";
 import { Table } from "react-bootstrap";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import "./primary.css";
+import "../style/primary.css";
 const Primary = () => {
   const grades = useSelector((state: MainState) => state.admission.value);
   const dispatch = useDispatch();
@@ -24,10 +24,16 @@ const Primary = () => {
     <>
       <div>
         <section className="primaryimg"></section>
-        <Breadcrumb className="breadcrumb">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/admission">Admission</Breadcrumb.Item>
-          <Breadcrumb.Item active>Primary</Breadcrumb.Item>
+        <Breadcrumb>
+          <Breadcrumb.Item href="/" className="item">
+            Home
+          </Breadcrumb.Item>
+          <Breadcrumb.Item href="/admission" className="item">
+            Admission
+          </Breadcrumb.Item>
+          <Breadcrumb.Item active className="item">
+            Primary
+          </Breadcrumb.Item>
         </Breadcrumb>
       </div>
       <div className="container">

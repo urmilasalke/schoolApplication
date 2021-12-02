@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   height: 300px;
 }
-/* #9bbf47; */
+
 .breadcrumb {
   background-color: tomato;
   display: inline-block;
@@ -13,17 +13,10 @@
 
 .item {
   text-decoration: none;
-  margin: 7px 7px 7px;
+  padding: 10px;
+  margin: 7px 0 7px;
   color: black;
 }
-
-/* .item:focus,
-.item:hover,
-.item:visited,
-.item:link,
-.item:active {
-  text-decoration: none;
-} */
 
 .aboutus-content {
   padding: 100px;
@@ -38,8 +31,6 @@
   background-repeat: no-repeat;
   height: auto;
   border-radius: 2px solid black;
-
-  /* height: 100%; */
 }
 .containers {
   width: 100%;

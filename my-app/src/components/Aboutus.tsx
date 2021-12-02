@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./aboutus.css";
+import "../style/aboutus.css";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 // import { Accordion } from 'react-bootstrap';
 // import { Card } from 'react-bootstrap';
@@ -19,7 +19,7 @@ const Aboutus = () => {
     <>
       <div>
         <section className="aboutschool"></section>
-        <Breadcrumb className="breadcrumb">
+        <Breadcrumb>
           <Breadcrumb.Item href="/" className="item">
             Home
           </Breadcrumb.Item>
@@ -53,7 +53,12 @@ const Aboutus = () => {
         </div>
       </div>
       <br></br>
-      <div id="home" className="accordions" onClick={() => homefun()}>
+      <div
+        id="home"
+        data-testid="home-text"
+        className="accordions"
+        onClick={() => homefun()}
+      >
         History
       </div>
       {home && (

@@ -8,15 +8,11 @@
 
 .h5 {
   padding: 20px;
-  /* text-align: center; */
 }
 
 .item {
   text-decoration: none;
-  margin: 7px 7px 7px;
+  padding: 7px;
+  margin: 7px 0 7px;
   color: black;
 }
-/* 
-.link {
-  text-decoration: none;
-} */

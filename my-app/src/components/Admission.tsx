@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setAdmissionGrades } from "./reducers/AdmissionReducer";
 import { Link } from "react-router-dom";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import "./admission.css";
+import "../style/admission.css";
 const Admission = () => {
   const grades = useSelector((state: MainState) => state.admission.value);
   const dispatch = useDispatch();
@@ -29,7 +29,7 @@ const Admission = () => {
     <>
       <div>
         <section className="school"></section>
-        <Breadcrumb className="breadcrumb">
+        <Breadcrumb>
           <Breadcrumb.Item href="/" className="item">
             Home
           </Breadcrumb.Item>

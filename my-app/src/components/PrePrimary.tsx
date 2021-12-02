@@ -6,7 +6,7 @@ import { setAdmissionGrades } from "./reducers/AdmissionReducer";
 import { MainState } from "./store/AdmissionStore";
 import Table from "react-bootstrap/Table";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import "./pre-primary.css";
+import "../style/pre-primary.css";
 const PrePrimary = () => {
   const grades = useSelector((state: MainState) => state.admission.value);
   const dispatch = useDispatch();
@@ -27,10 +27,16 @@ const PrePrimary = () => {
     <>
       <div>
         <section className="pre-primaryimg"></section>
-        <Breadcrumb className="breadcrumb">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/admission">Admission</Breadcrumb.Item>
-          <Breadcrumb.Item active>Pre-primary</Breadcrumb.Item>
+        <Breadcrumb>
+          <Breadcrumb.Item href="/" className="item">
+            Home
+          </Breadcrumb.Item>
+          <Breadcrumb.Item href="/admission" className="item">
+            Admission
+          </Breadcrumb.Item>
+          <Breadcrumb.Item active className="item">
+            Pre-primary
+          </Breadcrumb.Item>
         </Breadcrumb>
       </div>
       <div className="container">

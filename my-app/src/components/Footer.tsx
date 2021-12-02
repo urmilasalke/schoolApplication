@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./footer.css";
+import "../style/footer.css";
 const Footer = () => {
   return (
     // p-3 mb-2 bg-dark bg-gradient text-white
